@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bawarchi's</title>
+    <style>
+         h1{
+             text-align: center;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight:  bold;
+            color: rgb(219, 74, 74);
+         }
+        #top-header{
+            display: flex;   
+            border-bottom:2px solid; 
+            justify-content: space-between; 
+        }
+        #top-header > img{
+         height: 40px;
+         width: 40px;
+        }
+        #top-nav{     /*ul*/
+            display: flex;
+            column-gap: 16px;
+            
+            
+        }
+        #top-nav > li{
+            list-style: none;
+        }
+        #top-nav >li > a{
+            text-decoration: none;
+            color:blue;
+             }
+             #top-nav >li > a:hover{
+             color:red;
+             }
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>BAWARCHI BIRYANI</h1>
-            <img src ='.\assets\img\OIP.jpg' width=40>
-            <ul>
+    <h1>BAWARCHI BIRYANI</h1>
+    <header id="top-header">
+        <img src ='.\assets\img\OIP.jpg' width=40>
+
+        <nav>  
+                  <ul id="top-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
@@ -19,7 +58,7 @@
             </ul>
         </nav>
     </header>
-    <hr>
+    
        <section>
         <h2>Contact Us</h2> 
 <form >

@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         h1{
+             text-align: center;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight:  bold;
+            color: rgb(219, 74, 74);
+         }
+        #top-header{
+            display: flex;   
+            border-bottom:2px solid; 
+            justify-content: space-between; 
+        }
+        #top-header > img{
+         height: 40px;
+         width: 40px;
+        }
+        #top-nav{     /*ul*/
+            display: flex;
+            column-gap: 16px;
+            
+            
+        }
+        #top-nav > li{
+            list-style: none;
+        }
+        #top-nav >li > a{
+            text-decoration: none;
+            color:blue;
+             }
+             #top-nav >li > a:hover{
+             color:red;
+             }
+</style>
+    
 </head>
 <body>
-    <header>
+    <h1>BAWARCHI BIRYANI</h1>
+    <header id="top-header">
+        <img src ='.\assets\img\OIP.jpg' width=40>
         <nav>
-            <h1>BAWARCHI BIRYANI</h1>
-            <img src ='.\assets\img\OIP.jpg' width=40>
-            <ul>
+            <ul id="top-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./menu.html">Menu</a></li>
@@ -24,14 +63,12 @@
             <h2>About</h2>
             <img src ='.\assets\img\OIP.jpg' width=400>
         <p>A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
-        <hr>
     </section>
 </article>
     </main>
     <aside>
         
     </aside>
-    <hr>
     <footer>
         <nav>
             <ul>

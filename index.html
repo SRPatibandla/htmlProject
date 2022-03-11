@@ -1,41 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
+    <title>Bawarchi's</title>    
+    <style>
+         h1{
+             text-align: center;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight:  bold;
+            color: rgb(219, 74, 74);
+         }
+                  
+    #top-header{
+        display: flex;   
+        border-bottom:2px solid; 
+        justify-content: space-between; 
+        }
+    
+    #top-header > img{
+     height: 40px;
+     width: 40px;
+    }
+    #top-nav{     /*ul*/
+        display: flex;
+        column-gap: 16px;    
+    }
+    #top-nav > li{
+        list-style: none;
+    }
+    #top-nav >li > a{
+        text-decoration: none;
+        color:blue;
+         }
+         #top-nav >li >a:hover{
+             color:red;
+            }
+         .section-container{
+             display:flex;
+             flex-direction: column;
+             color:darkgreen;
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight:bold;
+         }
+    .side-container{
+        display: flex;
+        column-gap: 16px;
+    }
+    .side-container > li{
+       
+        list-style:  none;
+   
+    }
+    .side-container >li >a{
+        text-decoration: none;
+        color:rgb(243, 87, 30)
+    }
+
+     .side-container > li>a:hover {
+         color: rgb(171, 241, 65)
+      } 
+      
+      .main-aside{
+       display:flex;
+    }
+        </style>
+    </head>
 <body>
-    <header>
+    <h1>BAWARCHI BIRYANI</h1>
+    <header id="top-header">
+        <img src ='.\assets\img\OIP.jpg'width=40>
         <nav>
-            <h1>BAWARCHI BIRYANI</h1>
-            <img src ='.\assets\img\OIP.jpg' width=40>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
+          
+            <ul id="top-nav">
+                <li id="first-li"class="my-li"><a href="/">Home</a></li>
+                <li class="my-li"><a href="./about.html">About</a></li>
+                <li class="my-li"><a href="./menu.html">Menu</a></li>
+                <li class="my-li"><a href="./contactus.html">Contact Us</a></li>
             
             </ul>
         </nav>
     </header>
-    <hr>
+   <div class="main-aside">
     <main>
         <article>
-            <section>
-                <h2>We are open for dine in & Delivery </h2>
+            <section class="section-container">
+                <h2 id="heading">We are open for dine in & Delivery </h2>
                 <img src ='.\assets\img\OIP.jpg' width=400>
-            <p>Bawarchi Biryanis is our full service restaurant concept and is home to an elaborate menu of Biryanis, and an extensive array of Pan Indian dishes. Our signature dish, Hyderabadi Dum Biryani stands as a benchmark for Biryanis in America and is the most ordered dish among the Biryani aficionados. We are known for our signature curries like Butter Chicken, Gongura Mutton, Shahi Paneer. Our weekend specials like Natukodi Fry, Andhra Mutton Korma, Royyala Vepudu and Bawarchi Tiffins like Masala Dosa, Rava Dosa, Idli/Vada and Pesarattu are our customer favorites. We also offer catering services for all occasions from Weddings to Birthday Parties. Make Bawarchi Biryanis your favorite place to dine.</p>
-         <hr>  
+            <p id="para1">Bawarchi Biryanis is our full service restaurant concept and is home to an elaborate menu of Biryanis, and an extensive array of Pan Indian dishes. Our signature dish, Hyderabadi Dum Biryani stands as a benchmark for Biryanis in America and is the most ordered dish among the Biryani aficionados. We are known for our signature curries like Butter Chicken, Gongura Mutton, Shahi Paneer. Our weekend specials like Natukodi Fry, Andhra Mutton Korma, Royyala Vepudu and Bawarchi Tiffins like Masala Dosa, Rava Dosa, Idli/Vada and Pesarattu are our customer favorites. We also offer catering services for all occasions from Weddings to Birthday Parties. Make Bawarchi Biryanis your favorite place to dine.</p> 
         </section>
-        
+    <aside>
+        <nav>
+            <ul class="side-container">
+                <li><a href="https://www.allrecipes.com/gallery/the-best-biryani-recipes/" target="blank">Recipies</a></li>
+                <li><a href="https://www.thespicehouse.com/collections/india" target="blank">Spices</a></li>
+                <li><a href="/">Our Story</a></li>
+            </ul>   
+        </nav>
         <section>
-            <h2>About</h2>
-            <img src ='.\assets\img\OIP.jpg' width=400>
-        <p>A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
-        <hr>
-    </section>
+            <div>
+               <img src ='.\assets\img\dish1.png' width="100">
+               <img src ='.\assets\img\dish1.png' width="100">
+            </div>
+        </section>
+    </aside>
+</main>
+</div>
+<section>
+    <h2>About</h2>
+    <img src ='.\assets\img\OIP.jpg' width=400>
+<p id="para2">A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
+<hr>
+</section>
     <section>
         <h2>Menu</h2>
         <select name="menu" id="menu">
@@ -69,24 +153,8 @@
 </form>
     </section>
 </article>
-    </main>
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="https://www.allrecipes.com/gallery/the-best-biryani-recipes/" target="blank">Recipies</a></li>
-                <li><a href="https://www.thespicehouse.com/collections/india" target="blank">Spices</a></li>
-                <li><a href="/">Our Story</a></li>
-            </ul>
-        
-        </nav>
-        <section>
-            <div>
-               <img src ='.\assets\img\dish1.png' width="100">
-               <img src ='.\assets\img\dish1.png' width="100">
-            </div>
-        </section>
-    </aside>
-    <hr>
+  
+    
     <footer>
         <nav>
             <ul>

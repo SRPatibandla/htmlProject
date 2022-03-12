@@ -58,46 +58,14 @@ color:rgb(243, 87, 30)
 .side-container > li>a:hover {
 color: rgb(171, 241, 65)
 } 
-          h1{
-             text-align: center;
-            font-size: 2em;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 1.33em;
-            margin-bottom: 1.33em;
-            margin-left: 0;
-            margin-right: 0;
-            font-weight:  bold;
-            color: rgb(219, 74, 74);
-         }
-        #top-header{
-            display: flex;   
-            border-bottom:2px solid; 
-            justify-content: space-between; 
-        }
-        #top-header > img{
-         height: 40px;
-         width: 40px;
-        }
-        #top-nav{     /*ul*/
-            display: flex;
-            column-gap: 16px;
-            }
-        #top-nav > li{
-            list-style: none;
-        }
-        #top-nav >li > a{
-            text-decoration: none;
-            color:blue;
-             }
-             #top-nav >li > a:hover{
-             color:red;
-             }
+        
              h2{
                  color:red;
                  font-weight: bolder;
                  text-align: center;
                  padding-bottom: 30px;
                  text-decoration: underline;
+                 font-size: 50px;
                  
              } 
 
@@ -179,6 +147,9 @@ textarea{
 textarea:focus{
     background-color: rgb(146, 154, 156);
 }
+label{
+color: blue;
+}
 .button{
     color:white;
     background-color:red;
@@ -213,6 +184,6 @@ h4{
 .footer-ul > li >a{
     text-decoration: none;
 }
-.main-aside{
+/* .main-aside{
 display:flex;
-}
+} */

@@ -9,6 +9,7 @@
     <title>Bawarchi's</title>    
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <h1>BAWARCHI BIRYANI</h1>
@@ -26,8 +27,8 @@
         </nav>
     </header>
    <div class="container1">
-    <main>
-        <article>
+    <main class>
+        <article class="container1">
             <section class="section-container">
                 <h2 id="heading">We are open for dine in & Delivery </h2>
                 <img src ='.\assets\img\OIP.jpg' width=400>
@@ -51,14 +52,15 @@
 </main>
 </div>
 <section>
-    <h2>About</h2>
+    <h2 class="heading2">About</h2>
     <img src ='.\assets\img\OIP.jpg' width=400>
 <p id="para2">A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
-<hr>
+
 </section>
     <section>
         <h2>Menu</h2>
-        <select name="menu" id="menu">
+        <ul></ul>
+        <!-- <select name="menu" id="menu">
             <option>Chicken Biryani</option>
             <option>Mutton Biryani</option>
             <option>Veg Biryani</option>
@@ -67,18 +69,19 @@
             <option>Chicken Samosa</option>
             <option>Tikkis</option>
 
-        </select>
+        </select> -->
     </section>
     <section>
         <h2>Contact Us</h2> 
 <form>
-    <label for="Name">Name</label><span> </span><input type="text" name="fName"  placeholder="name" >
-    <br>
-    <br>
+    <label for="Name">Name</label>
+    <input type="text" name="fName"  placeholder="name" >
+
     <label>Birth Date<input type='date'></label>
     
-<label for="Email">Email</label> <SPAN> </SPAN><input type="email" required placeholder="abc@gmail.com">
-<label for="Phone">Phone<span> </span></label><input type="number" name="Phone" placeholder="###-###-####">
+<label for="Email">Email</label><input type="email" required placeholder="abc@gmail.com">
+<label for="Phone">Phone<span></label>
+    <input type="number" name="Phone" placeholder="###-###-####">
 <label for="Message">Message</label><textarea placeholder="Type here"></textarea><br>
 <button class="button">Submit</button>
 </form>
@@ -104,6 +107,6 @@
             </p>
         </nav>
     </footer>
-
+    <p class="p3">Copyright © 2022 Sireesha Patibandla</p>
 </body>
 </html>

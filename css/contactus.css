@@ -58,7 +58,7 @@ color:rgb(243, 87, 30)
 .side-container > li>a:hover {
 color: rgb(171, 241, 65)
 } 
-<style>
+<styl>
          h1{
              text-align: center;
             font-size: 2em;
@@ -216,7 +216,6 @@ h4{
 .footer-ul > li >a{
     text-decoration: none;
 }
-</style>
 .main-aside{
 display:flex;
 }

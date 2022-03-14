@@ -59,15 +59,14 @@ color:rgb(243, 87, 30)
 color: rgb(171, 241, 65)
 } 
         
-             h2{
-                 color:red;
-                 font-weight: bolder;
-                 text-align: center;
-                 padding-bottom: 30px;
-                 text-decoration: underline;
-                 font-size: 50px;
-                 
-             } 
+h2{
+color:red;
+font-weight: bolder;
+text-align: center;
+padding-bottom: 30px;
+text-decoration: underline;
+font-size: 50px;
+} 
 
 input[type=text]{
     width:100%;
@@ -78,13 +77,12 @@ input[type=text]{
     border-radius: 4px;
     border: 1px solid #ccc;
     background-color: rgb(178, 250, 178);
-    color:rgb(255, 60, 0);
+    color: white;
 }
 input[type=text]:focus{
     background-color: rgb(146, 154, 156);
 }
-input[type=Date]{
-    color: rgb(255, 60, 0);
+ input[type=date]{
     width: 100%;
     padding: 12px 10px;
     margin: 8px 0;
@@ -93,13 +91,13 @@ input[type=Date]{
     border-radius: 4px;
     border: 1px solid #ccc;
     background-color: rgb(178, 250, 178);
-
+    color:red;
 }
-input[type=Date]:focus{
+input[type=date]:focus{
     background-color: rgb(146, 154, 156);
 }
 input[type=email]{
-    color: rgb(255, 60, 0);
+    color: white;
     width: 100%;
     padding: 12px 10px;
     margin: 8px 0;
@@ -114,8 +112,7 @@ input[type=email]:focus{
 
 }
 ::placeholder{
-    color:rgb(255, 60, 0);
-
+    color:rgb(255, 60, 0); 
 }
 input[type=number]{
     color:white;
@@ -175,15 +172,7 @@ h4{
     font-size: 20px;
     font-weight: bold;
 }
-.footer-container{
-    display: flex;
-}
-.footer-ul> li{
-    list-style: none;
-}
-.footer-ul > li >a{
-    text-decoration: none;
-}
+
 /* .main-aside{
 display:flex;
 } */

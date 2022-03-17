@@ -12,7 +12,7 @@ text-align:justify;
 padding-bottom: 30px;
 font-size: 30px;
 }
-h1{
+ h1{
    text-align: center;
    font-size: 2em;
    font-family: Arial, Helvetica, sans-serif;
@@ -36,16 +36,19 @@ justify-content: space-between;
 height: 40px;
 width:40px;
 }
-#top-nav{     /*ul*/
+ #top-nav{     /*ul*/
 display: flex;
-column-gap: 16px;    
+column-gap: 16px;   
+/* align-content: center;  */
 }
 #top-nav > li{
 list-style: none;
+
 }
-#top-nav >li > a{
+ #top-nav >li > a{
 text-decoration: none;
 color:blue;
+
 }
 #top-nav >li >a:hover{
     color:red;
@@ -87,13 +90,30 @@ color:rgb(243, 87, 30);
 .side-container > li>a:hover {
 color: rgb(171, 241, 65);
 } 
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
+/*for mobiles*/
+@media only screen and (max-width: 600px) {
+  #top-header > img{
+height: 40px;
+width:40px;
 }
+}
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+ #top-header > img{
+height: 60px;
+width:60px;
+}
+}
+/*for desktops*/
+@media only screen and (min-width:992px) {
+  #top-header > img{
+ height: 100px;
+ width: 100px;
+ }
+ }
 .footer-ul{
   padding-left: 0px;
+  
 }
 .footer-ul> li{
   padding: 10px 20px;
@@ -113,4 +133,7 @@ color: rgb(171, 241, 65);
 }
 #menu{
   margin-bottom:200px;
+}
+h4{
+  margin-top:20%
 }

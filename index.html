@@ -1,109 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Bawarchi's</title>    
-    <link rel="stylesheet" href="css/mystyles.css">
-    <link rel="stylesheet" href="css/contactus.css">
-    <link rel="stylesheet" href="css/about.css">
-</head>
-<body> 
-    <h1>BAWARCHI BIRYANI</h1>
-    <header id="top-header">
-        <img src ='.\assets\img\OIP.jpg'width=40%>
-      <nav> 
-            <ul id="top-nav">
-                <li id="first-li"class="my-li"><a href="/">Home</a></li>
-                <li class="my-li"><a href="./about.html">About</a></li>
-                <li class="my-li"><a href="./menu.html">Menu</a></li>
-                <li class="my-li"><a href="./contactus.html">Contact Us</a></li>          
-            </ul>
-        </nav>
-    </header>
-   <div>
-    <main>
-        <article class="container1">
-            <section class="section-container">
-                <h2 id="heading">We are open for dine in & Delivery </h2>
-                <img src ='.\assets\img\OIP.jpg' width=50%>
-            <p id="para1">Bawarchi Biryanis is our full service restaurant concept and is home to an elaborate menu of Biryanis, and an extensive array of Pan Indian dishes. Our signature dish, Hyderabadi Dum Biryani stands as a benchmark for Biryanis in America and is the most ordered dish among the Biryani aficionados. We are known for our signature curries like Butter Chicken, Gongura Mutton, Shahi Paneer. Our weekend specials like Natukodi Fry, Andhra Mutton Korma, Royyala Vepudu and Bawarchi Tiffins like Masala Dosa, Rava Dosa, Idli/Vada and Pesarattu are our customer favorites. We also offer catering services for all occasions from Weddings to Birthday Parties. Make Bawarchi Biryanis your favorite place to dine.</p> 
-        </section>
-    <aside class="container2">
-        <nav>
-            <ul class="side-container">
-                <li><a href="https://www.allrecipes.com/gallery/the-best-biryani-recipes/" target="blank">Recipies</a></li>
-                <li><a href="https://www.thespicehouse.com/collections/india" target="blank">Spices</a></li>
-                <li><a href="/">Our Story</a></li>
-            </ul>   
-        </nav>
-        <section>
-            <div>
-               <img src ='.\assets\img\dish1.png' width="100">
-               <img src ='.\assets\img\dish1.png' width="100">
-            </div>
-        </section>
-    </aside>
-</main>
-</div>
-<section>
-    <h2 class="heading2">About</h2>
-    <img src ='.\assets\img\OIP.jpg' width=400>
-<p id="para2">A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
-
-</section>
-    <section>
-        <h2>Menu</h2>
-        <ul></ul>
-         <select name="menu" id="menu">
-            <option>Chicken Biryani</option>
-            <option>Mutton Biryani</option>
-            <option>Veg Biryani</option>
-            <option>Tandoori Chicken</option>
-            <option>Veg Samosas</option>
-            <option>Chicken Samosa</option>
-            <option>Tikkis</option>
-
-        </select>
-    </section>
-    <section>
-        <h2>Contact Us</h2> 
-<form>
-    <label for="Name">Name</label>
-    <input type="text" name="fName"  placeholder="name" >
-
-    <label for="Birth Date">Birth Date<input type="date" placeholder="dd-mm-yyyy"></label>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bawarchi's</title>    
+        <link rel="stylesheet" href="css/mystyles.css">
+        <link rel="stylesheet" href="css/contactus.css">
+        <link rel="stylesheet" href="css/about.css">
     
-<label for="Email">Email</label><input type="email" required placeholder="abc@gmail.com">
-<label for="Phone">Phone<span></label>
-    <input type="number" name="Phone" placeholder="###-###-####">
-<label for="Message">Message</label><textarea placeholder="Type here"></textarea><br>
-<button class="button">Submit</button>
-</form>
-    </section>
-</article>
-  
-    
-    <footer>
-        <nav>
-            <ul class="footer-ul">
-                <li><a href="/">OURLOCATION</a></li>
-                <li><a href="/">JOINUS</a></li>
-                <li><a href="/">FOLLOWUS</a></li>
-            </ul>
-            <h4>Location</h4>
-            <p>
-                Bawarchi Head Office:
-
-                4940 McDermott Rd, Suite #100, Plano, TX - 75024
-                Call : (972) 737-8070 , (469) 992-8700
+        <style>
+            .item1 { grid-area: header; }
+ .item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+            .grid-container{
+                width:90%;
+                margin: 0 auto;
+                display: grid;
+               grid-template-areas:  'header header header header header' 
+               'menu main main main right ' 
+               'footer footer footer footer footer ';
+  gap: 10px;
+            }
+            /* .grid-container > div >.item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+            }
+            .grid-container > div >.item2 {
+  background-color: rgba(131, 248, 53, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>  
+            <div class="item4"></div>
+            <div class="item5"></div>
+          </div>
+          <h1>BAWARCHI BIRYANI</h1>
+            <header id="top-header">
+          <img src ='.\assets\img\OIP.jpg'width=40%>
+        </header>
                 
-                Support: info@bawarchirestaurants.com
-            </p>
-        </nav>
-    </footer>
-    <p class="p3">Copyright © 2022 Sireesha Patibandla</p>
-</body>
+        <nav > 
+                    <ul id="top-nav">
+                        <li id="first-li"class="my-li"><a href="/">Home</a></li>
+                        <li class="my-li"><a href="./about.html">About</a></li>
+                        <li class="my-li"><a href="./menu.html">Menu</a></li>
+                        <li class="my-li"><a href="./contactus.html">Contact Us</a></li>          
+                    </ul>
+                </nav>
+            
+            <!-- <section class="item3">Main</section> -->
+            <div>
+                <main>
+                    <article class="container1">
+                        <section class="section-container">
+                            <h2 id="heading">We are open for dine in & Delivery </h2>
+                            <img src ='.\assets\img\OIP.jpg' width=50%>
+                        <p id="para1">Bawarchi Biryanis is our full service restaurant concept and is home to an elaborate menu of Biryanis, and an extensive array of Pan Indian dishes. Our signature dish, Hyderabadi Dum Biryani stands as a benchmark for Biryanis in America and is the most ordered dish among the Biryani aficionados. We are known for our signature curries like Butter Chicken, Gongura Mutton, Shahi Paneer. Our weekend specials like Natukodi Fry, Andhra Mutton Korma, Royyala Vepudu and Bawarchi Tiffins like Masala Dosa, Rava Dosa, Idli/Vada and Pesarattu are our customer favorites. We also offer catering services for all occasions from Weddings to Birthday Parties. Make Bawarchi Biryanis your favorite place to dine.</p> 
+                    </section>
+              
+            <!-- <aside class="item4">aside</aside> -->
+            <aside class="container2">
+                <nav>
+                    <ul class="side-container">
+                        <li><a href="https://www.allrecipes.com/gallery/the-best-biryani-recipes/" target="blank">Recipies</a></li>
+                        <li><a href="https://www.thespicehouse.com/collections/india" target="blank">Spices</a></li>
+                        <li><a href="/">Our Story</a></li>
+                    </ul>   
+                </nav>
+                <section>
+                    <div>
+                       <img src ='.\assets\img\dish1.png' width="100">
+                       <img src ='.\assets\img\dish1.png' width="100">
+                    </div>
+                </section>
+            </aside>
+        </main>
+        </div>
+        <section >
+            <h2 class="heading2">About</h2>
+            <img src ='.\assets\img\OIP.jpg' width=400>
+        <p id="para2">A wide range of aromatic spices come together to create a beautiful pot of Biryani. Biryani is not only popular, but also one of the most loved delicacies in the culinary world . For anyone craving for authentic Dum Biryani, Bawarchi is your place to go. We promise to make your dining experience memorable. Our aim is to create a sense of home away from home for all the food lovers in Hyderabad. Stop by and dine in at your nearest Bawarchi restaurant to enjoy our food and hospitality.</p>
+        
+        </section>
+            <section>
+                <h2>Menu</h2>
+                <ul></ul>
+                 <select name="menu" id="menu">
+                    <option>Chicken Biryani</option>
+                    <option>Mutton Biryani</option>
+                    <option>Veg Biryani</option>
+                    <option>Tandoori Chicken</option>
+                    <option>Veg Samosas</option>
+                    <option>Chicken Samosa</option>
+                    <option>Tikkis</option>
+        
+                </select>
+            </section>
+            <section>
+                <h2>Contact Us</h2> 
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" name="fName"  placeholder="name" >
+        
+            <label for="Birth Date">Birth Date<input type="date" placeholder="dd-mm-yyyy"></label>
+            
+        <label for="Email">Email</label><input type="email" required placeholder="abc@gmail.com">
+        <label for="Phone">Phone<span></label>
+            <input type="number" name="Phone" placeholder="###-###-####">
+        <label for="Message">Message</label><textarea placeholder="Type here"></textarea><br>
+        <button class="button">Submit</button>
+        </form>
+            </section>
+        </article>     
+            <!-- <footer class="item5">footer</footer> -->
+            
+            <footer>
+
+                <nav>
+                <ul class="footer-ul">
+                    <li><a href="/">OURLOCATION</a></li>
+                    <li><a href="/">JOINUS</a></li>
+                    <li><a href="/">FOLLOWUS</a></li>
+                </ul>
+                <h4>Location</h4>
+                <p>
+                    Bawarchi Head Office:
+    
+                    4940 McDermott Rd, Suite #100, Plano, TX - 75024
+                    Call : (972) 737-8070 , (469) 992-8700
+                    
+                    Support: info@bawarchirestaurants.com
+                </p>
+            </nav>
+        </footer>
+        <p class="p3">Copyright © 2022 Sireesha Patibandla</p>
+        </div>
+    </body>
 </html>

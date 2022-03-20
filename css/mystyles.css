@@ -1,9 +1,4 @@
- /* *{
-  box-sizing: border-box;
-} */
-/* body{
-background-color: rgb(250, 245, 245);
-} */
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +8,7 @@ body {
   margin: 0 auto; /* Center website */
   max-width: 800px; /* Max width */
   padding: 20px;
+  background-color: rgb(250, 245, 245);
 }
  #heading{
   color:red;
